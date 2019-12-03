@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_margin="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/pictureImageView"
+            android:layout_width="@dimen/img_size"
+            android:layout_height="@dimen/img_size"
+            android:contentDescription="@null"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"
+            android:src="@android:mipmap/sym_def_app_icon"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                android:textSize="@dimen/title_size"
+                android:ellipsize="marquee"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/modelTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:textAllCaps="true"
+                android:textStyle="italic"
+                android:textSize="@dimen/text_size"
+                android:ellipsize="marquee"
+                android:singleLine="true"/>
+
+            <TextView
+                android:id="@+id/equipmentsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/darker_gray"
+                android:textAllCaps="true"
+                android:textStyle="normal"
+                android:textSize="@dimen/text_size"
+                android:minLines="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
