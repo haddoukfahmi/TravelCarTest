@@ -5,7 +5,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
 import com.travelcar_test.ui.account.AccountFragment
 import com.travelcar_test.ui.car_list.CarsListFragment
-import javax.inject.Inject
+
 
 class TabsAdapter(fm: FragmentManager) : FragmentPagerAdapter(fm) {
 
